@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Nikkah || Find Your Life Partner</title>
-    <link rel="shortcut icon" href="./imgs/logo/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="tailwind.css">
-    <link rel="stylesheet" href="libray/tailwind_css_lib/tailwind.min.css">
-    <script src="./libray/tailwind_js_lib/tailwind.js"></script>
+    <link rel="shortcut icon" href="../imgs/logo/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../tailwind.css">
+    <link rel="stylesheet" href="../libray/tailwind_css_lib/tailwind.min.css">
+    <script src="../libray/tailwind_js_lib/tailwind.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -21,20 +21,18 @@
             <img src="./imgs/logo/logo.svg" class="mr-3 h-10  md:h-16" alt="Logo">
             <span class="self-center text-xl font-semibold text-gray-700  whitespace-nowrap dark:text-white">Nikkah</span>
         </a>
-        
+
         <div class="flex md:order-2">
 
-            <a href="login.html" class="hidden md:flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">person</span>
-                <span class="flex-1 ml-1 whitespace-nowrap mt-1">লগিন </span>
-             </a>
-             <div class="hidden md:flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white  ">/</div>
+          <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class="text-white    focus:outline-none  font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button">
+              <a href="profile.html" class="flex">
+                <img class="w-8 h-8 rounded-full" src="./imgs/index/01.jpg" alt="User_avatar">
+                <span class="flex-1 ml-1 whitespace-nowrap mt-1 text-gray-800 dark:text-gray-300">প্রফাইল</span>
+              </a>
+          </button>
 
-             <a href="signup.html" class="hidden md:flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">person_add</span>
-                <span class="flex-1 ml-1 whitespace-nowrap mt-1">সাইন আপ  </span>
-             </a>
-             
+          
+             <div class="hidden md:flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white  ">/</div>
 
             <button data-drawer-target="navbar_slider" data-drawer-show="navbar_slider" aria-controls="navbar_slider"  type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
               <span class="sr-only">Opn main menu</span>
@@ -53,16 +51,16 @@
               <a href="index.html" class="block py-2 pr-4 underline pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">হোম</a>
             </li>
             <li>
+              <a href="bride_groom.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">বর/কনে</a>
+            </li>
+            <li>
               <a href="create-bio-data.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">বায়োডাটা তৈরি করুন</a>
             </li>
             <li>
-              <a href="blog.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ব্লগ</a>
+              <a href="write-a-blog.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ব্লগ লিখুন</a>
             </li>
             <li>
               <a href="success-story.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">সফলতার গল্প</a>
-            </li>
-            <li>
-              <a href="course.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">কোর্স</a>
             </li>
             <li>
               <a href="about-us.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">আমাদের সম্পর্কে</a>
@@ -89,34 +87,30 @@
                 <span class="ml-3">হোম</span>
              </a>
           </li>
+          
           <li>
-             <button type="button" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
-                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">search</span>
-                   <span class="flex-1 ml-3 text-left whitespace-nowrap">আমি খুঁজছি.....</span>
-                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-             </button>
-             <ul id="dropdown-example" class="hidden py-2 space-y-2">
-                   <li>
-                      <a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">পাত্র </a>
-                   </li>
-                   <li>
-                      <a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">পাত্রী</a>
-                   </li>
-                   <li>
-                      <a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">ডিফর্সী পাত্র/পাত্রী</a>
-                   </li>
-             </ul>
+            <a href="profile.htm" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+               <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">account_circle</span>
+               <span class="ml-3">প্রফাইল</span>
+            </a>
+         </li>
+          <li>
+            <a href="create-bio-data.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+              <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">edit_note</span>
+              <span class="flex-1 ml-3 whitespace-nowrap">বায়োডাটা তৈরি করুন</span>
+           </a>
           </li>
           <li>
-             <a href="login.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">person</span>
-                <span class="flex-1 ml-3 whitespace-nowrap">লগিন </span>
-             </a>
+            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+              <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">logout</span>
+              <span class="flex-1 ml-3 whitespace-nowrap">লগ আউট</span>
+           </a>
+          </li>
           <li>
-             <a href="signup.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">person_add</span>
-                <span class="flex-1 ml-3 whitespace-nowrap">সাইন আপ</span>
-             </a>
+            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+              <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">logout</span>
+              <span class="flex-1 ml-3 whitespace-nowrap">লগ আউট</span>
+           </a>
           </li>
        </ul>
     </div>
@@ -135,15 +129,15 @@
   <div class="relative h-screen overflow-hidden rounded ">
        <!-- Item 1 -->
       <div class="hidden duration-200 ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
-          <img src="./imgs/success_married/01.jpg" class="w-screen h-screen object-cover " alt="...">
+          <img src="./imgs/success_married/01.jpg" class="w-screen h-screen object-cover-z-10 " alt="...">
       </div>
       <!-- Item 2 -->
       <div class="duration-200 ease-linear absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
-          <img src="./imgs/success_married/02.jpg" class="w-screen h-screen object-cover  " alt="...">
+          <img src="./imgs/success_married/02.jpg" class="w-screen h-screen object-cover  -z-10" alt="...">
       </div>
       <!-- Item 3 -->
       <div class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
-          <img src="./imgs/success_married/03.jpg" class="w-screen h-screen object-cover  " alt="...">
+          <img src="./imgs/success_married/03.jpg" class="w-screen h-screen object-cover  -z-10" alt="...">
           <h1 class=" p-2 text-3xl text-center  absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen">
             আসুন || রেজিস্ট্রাশন করুন || ভালো জীবনসঙ্গী খুঁজুন
         </h1>
@@ -407,7 +401,7 @@
         </ul>
     </footer>
     
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
 </body>
 </html>
 

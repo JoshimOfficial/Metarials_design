@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nikkah || Find Your Life Partner</title>
+    <link rel="shortcut icon" href="./imgs/logo/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../tailwind.css">
+    <link rel="stylesheet" href="libray/tailwind_css_lib/tailwind.min.css">
+    <script src="./libray/tailwind_js_lib/tailwind.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body class="dark:bg-gray-900">
+
+
+    <!--Working with navbar-->
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="index.html" class="flex items-center">
+          <img src="./imgs/logo/logo.svg" class="mr-3 h-10  md:h-16" alt="Logo">
+          <span class="self-center text-xl font-semibold text-gray-700  whitespace-nowrap dark:text-white">Nikkah</span>
+      </a>
+
+      <div class="flex md:order-2 items-center">
+
+        <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class="text-white    focus:outline-none  font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button">
+          <img class="w-8 h-8 rounded-full" src="./imgs/index/01.jpg" alt="User_avatar">
+          <span class="flex-1 ml-1 whitespace-nowrap mt-1 text-gray-800 dark:text-gray-300">প্রফাইল</span>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div id="dropdownInformation" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 310px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+            <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
+              <div>Joshim Uddin</div>
+              <div class="font-medium truncate">text.exmple@gmail.com</div>
+            </div>
+            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformationButton">
+              <li>
+                <a href="profile.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ড্যাশবোর্ড</a>
+              </li>
+              <li>
+                <a href="account-settings.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">অ্যাকাউন্ট</a>
+              </li>
+            </ul>
+            <div class="py-1">
+              <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">লগ আউট</a>
+            </div>
+        </div>
+        
+           <div class="hidden md:flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white  ">/</div>
+
+          <button data-drawer-target="navbar_slider" data-drawer-show="navbar_slider" aria-controls="navbar_slider"  type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+            <span class="sr-only">Opn main menu</span>
+            <span class="material-icons">reorder</span>
+        </button>
+
+                     <!--Working with darkmode started-->
+                          <div class="flex items-center mt-[5px] w-7 h-7 cursor-pointer bg-gray-300 dark:bg-gray-700 rounded-full  ml-2 p-1 md:mt-2" id="toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="dark:fill-slate-300 w-5"><path d="M11.993,3a9.326,9.326,0,0,0-1.138,4.477,8.8,8.8,0,0,0,8.569,9.015c.2,0,.385-.017.576-.03A8.5,8.5,0,0,1,12.569,21,8.8,8.8,0,0,1,4,11.985,8.83,8.83,0,0,1,11.993,3Z"/></svg>
+                          </div>
+                    <!--Working with darkmode ended!-->
+      </div>
+      <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html" class="block py-2 pr-4  pl-3  bg-blue-700 rounded md:hover:text-blue-700 text-gray-700 md:bg-transparent md:p-0 dark:text-gray-400 dark:hover:text-white" aria-current="page">হোম</a>
+          </li>
+          <li>
+            <a href="bride_groom.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">বর/কনে</a>
+          </li>
+          <li>
+            <a href="create-bio-data.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">বায়োডাটা তৈরি করুন</a>
+          </li>
+          <li>
+            <a href="write-a-blog.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ব্লগ লিখুন</a>
+          </li>
+          <li>
+            <a href="success-story.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">সফলতার গল্প</a>
+          </li>
+          <li>
+            <a href="about-us.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">আমাদের সম্পর্কে</a>
+          </li>
+        </ul>
+        
+      </div>
+      </div>
+    </nav>
+
+    
+<!-- navbar slider started -->
+<div id="navbar_slider" class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="navbar_slider-label">
+   <h5 id="navbar_slider-label" class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+   <button type="button" data-drawer-dismiss="navbar_slider" aria-controls="navbar_slider" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+       <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+       <span class="sr-only">Close menu</span>
+   </button>
+ <div class="py-4 overflow-y-auto">
+     <ul class="space-y-2">
+        <li>
+           <a href="index.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+              <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">home </span>
+              <span class="ml-3">হোম</span>
+           </a>
+        </li>
+        
+        <li>
+          <a href="profile.htm" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+             <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">account_circle</span>
+             <span class="ml-3">প্রফাইল</span>
+          </a>
+       </li>
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+            <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">edit_note</span>
+            <span class="flex-1 ml-3 whitespace-nowrap">বায়োডাটা তৈরি করুন</span>
+         </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+            <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">logout</span>
+            <span class="flex-1 ml-3 whitespace-nowrap">লগ আউট</span>
+         </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+            <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">logout</span>
+            <span class="flex-1 ml-3 whitespace-nowrap">লগ আউট</span>
+         </a>
+        </li>
+     </ul>
+  </div>
+</div>
+
+    <!--Navbar slider finished!-->
+    <!--Navbar work finished!-->
+   
+      
+    <!--profile section started-->
+
+
+<!-- drawer init and show -->
+
+<div class="text-left md:hidden">
+    <button class="text-white font-medium  text-sm px-5 py-2.5 mr-2" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+        <span class="material-icons flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white">reorder</span>
+    </button>
+ </div>
+ 
+ <!-- drawer component -->
+ <div id="drawer-navigation" class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-navigation-label">
+     <h5 id="drawer-navigation-label" class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Settings</h5>
+     <button type="button" data-drawer-dismiss="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+         <span class="sr-only">Close menu</span>
+     </button>
+   <div class="py-4 overflow-y-auto">
+       <ul class="space-y-2">
+          <li>
+             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+                <span class="ml-3">ড্যাশবোর্ড</span>
+             </a>
+          </li>
+          <li>
+             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <span class="material-icons flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">lock</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">অ্যাকাউন্ট সেটিং</span>
+             </a>
+          </li>
+          <li>
+             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path><path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
+                <span class="flex-1 ml-3 whitespace-nowrap">মেসেজ</span>
+                <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200">3</span>
+             </a>
+          </li>
+          <li>
+             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                <span class="flex-1 ml-3 whitespace-nowrap">ঠিকানা আপটেড করুন</span>
+             </a>
+          </li>
+          <li>
+             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <span class="material-icons flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"> receipt</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">আপনার বায়োডাটা</span>
+             </a>
+          </li>
+          <li>
+             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"></path></svg>
+                <span class="flex-1 ml-3 whitespace-nowrap">লগ আউট করুন</span>
+             </a>
+          </li>
+       </ul>
+    </div>
+ </div>
+
+
+ 
+ <div class="flex flex-row">
+      
+  <div class=" hidden md:flex p-3  dark:bg-gray-800 w-60 rounded">
+    <div class="py-4 overflow-y-auto h-screen">
+      <ul class="space-y-2">
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+             <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+             <span class="ml-3">ড্যাশবোর্ড</span>
+          </a>
+       </li>
+       <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+             <span class="material-icons flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">lock</span>
+             <span class="flex-1 ml-3 whitespace-nowrap">অ্যাকাউন্ট সেটিং</span>
+          </a>
+       </li>
+       <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+             <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path><path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
+             <span class="flex-1 ml-3 whitespace-nowrap">মেসেজ</span>
+             <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200">3</span>
+          </a>
+       </li>
+       <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+             <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+             <span class="flex-1 ml-3 whitespace-nowrap">ঠিকানা আপটেড করুন</span>
+          </a>
+       </li>
+       <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+             <span class="material-icons flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"> receipt</span>
+             <span class="flex-1 ml-3 whitespace-nowrap">আপনার বায়োডাটা</span>
+          </a>
+       </li>
+       <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+             <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"></path></svg>
+             <span class="flex-1 ml-3 whitespace-nowrap">লগ আউট করুন</span>
+          </a>
+       </li>
+      </ul>
+   </div>
+  </div>
+
+
+  <!--Dashbord sec started@!-->
+  <div class="container w-full dark:text-gray-200 p-8">
+  <h1 class="font-medium text-2xl text-center underline">ড্যাশবোর্ড</h1>
+  <div class="container my-10 ">
+      <div class="m-auto"> 
+        <div class="flex flex-row items-center">
+        <h3 class="text-xl font-bold">আপনার বায়োডাটাগুলিঃ</h3>
+        <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200">1</span>
+        </div>
+
+        <div class="text-gray-300 my-5">
+        <a href="#" class="flex flex-col w-full items-center bg-white rounded border shadow-md md:flex-row  hover:bg-gray-100 dark:border-gray-700 border-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <img class="object-cover w-full md:h-auto md:w-48 rounded" src="./imgs/success_married/01.jpg" alt="">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">একজন পর্দাশীল ধার্মিক সহধর্মণী চাই।</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">আমি জসিম। এই-সেই,হাবি-জাবি,হ্যান-ত্যান.....এবং আমার এমনই একজন ধার্মিক মেয়ে প্রয়োজন </p>
+          </div>
+        </a>
+        </div>
+        
+        <div class="flex flex-row items-center">
+          <h3 class="text-xl font-bold ">পছন্দের বায়োডাটাঃ</h3>
+          <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200">2</span>
+          </div>
+
+        <div class="text-gray-300 my-5">
+          <a href="#" class="flex flex-col w-full items-center bg-white rounded border shadow-md md:flex-row  hover:bg-gray-100 dark:border-gray-700 border-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full md:h-auto md:w-48 rounded" src="./imgs/success_married/02.jpg" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">আমি রিয়া সুলতানা। অনার্স ৩য় বর্ষে পড়া লেখা করি।</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">এই-সেই,হাবি-জাবি,হ্যান-ত্যান.....অতএব এমন কেউ থাকলে নক দিবেন। অযথা কেউ বিরক্ত করবেন না প্লিজ। </p>
+            </div>
+          </a>
+          </div>
+
+          <div class="text-gray-300 my-5">
+            <a href="#" class="flex flex-col w-full items-center bg-white rounded border shadow-md md:flex-row  hover:bg-gray-100 dark:border-gray-700 border-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <img class="object-cover w-full md:h-auto md:w-48 rounded" src="./imgs/success_married/03.jpg" alt="">
+              <div class="flex flex-col justify-between p-4 leading-normal">
+                  <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">ইঞ্জিনিয়ার পাত্র প্রয়োজন </h5>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">আমি সামিরা বিনতে সামিহা। এই-সেই,হাবি-জাবি,হ্যান-ত্যান..... আমার চাহিদার মতোন কেউ থাকলে সাড়া দিবেন।  </p>
+              </div>
+            </a>
+            </div>
+
+      </div>
+  </div>
+
+  </div>
+      </div>
+  
+  
+    
+    <script src="../main.js"></script>
+</body>
+</html>
+
+

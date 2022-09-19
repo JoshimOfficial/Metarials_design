@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nikkah || Find Your Life Partner</title>
+    <link rel="shortcut icon" href="./imgs/logo/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="libray/tailwind_css_lib/tailwind.min.css">
+    <script src="./libray/tailwind_js_lib/tailwind.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body class="dark:bg-gray-900">
+
+
+    <!--Working with navbar-->
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="index.html" class="flex items-center">
+            <img src="./imgs/logo/logo.svg" class="mr-3 h-10  md:h-16" alt="Logo">
+            <span class="self-center text-xl font-semibold text-gray-700  whitespace-nowrap dark:text-white">Nikkah</span>
+        </a>
+        
+        <div class="flex md:order-2">
+
+            <a href="login.html" class="hidden md:flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">person</span>
+                <span class="flex-1 ml-1 whitespace-nowrap mt-1">লগিন </span>
+             </a>
+             <div class="hidden md:flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white  ">/</div>
+
+             <a href="signup.html" class="hidden md:flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">person_add</span>
+                <span class="flex-1 ml-1 whitespace-nowrap mt-1">সাইন আপ  </span>
+             </a>
+             
+
+            <button data-drawer-target="navbar_slider" data-drawer-show="navbar_slider" aria-controls="navbar_slider"  type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+              <span class="sr-only">Opn main menu</span>
+              <span class="material-icons">reorder</span>
+          </button>
+
+                       <!--Working with darkmode started-->
+                            <div class="flex items-center mt-[5px] w-7 h-7 cursor-pointer bg-gray-300 dark:bg-gray-700 rounded-full  ml-2 p-1 md:mt-2" id="toggle">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="dark:fill-slate-300 w-5"><path d="M11.993,3a9.326,9.326,0,0,0-1.138,4.477,8.8,8.8,0,0,0,8.569,9.015c.2,0,.385-.017.576-.03A8.5,8.5,0,0,1,12.569,21,8.8,8.8,0,0,1,4,11.985,8.83,8.83,0,0,1,11.993,3Z"/></svg>
+                            </div>
+                      <!--Working with darkmode ended!-->
+        </div>
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+          <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="index.html" class="block py-2 pr-4  pl-3 text-gray-700 bg-blue-700 rounded hover:text-blue-700 md:bg-transparent  md:p-0 dark:hover:text-white dark:text-gray-400" aria-current="page">হোম</a>
+            </li>
+            <li>
+              <a href="create-bio-data.html" class="block py-2 underline pr-4 pl-3 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">বায়োডাটা তৈরি করুন</a>
+            </li>
+            <li>
+              <a href="blog.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ব্লগ</a>
+            </li>
+            <li>
+              <a href="success-story.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">সফলতার গল্প</a>
+            </li>
+            <li>
+              <a href="course.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">কোর্স</a>
+            </li>
+            <li>
+              <a href="about-us.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">আমাদের সম্পর্কে</a>
+            </li>
+          </ul>
+          
+        </div>
+        </div>
+      </nav>
+
+      
+ <!-- navbar slider started -->
+ <div id="navbar_slider" class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="navbar_slider-label">
+     <h5 id="navbar_slider-label" class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+     <button type="button" data-drawer-dismiss="navbar_slider" aria-controls="navbar_slider" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+         <span class="sr-only">Close menu</span>
+     </button>
+   <div class="py-4 overflow-y-auto">
+       <ul class="space-y-2">
+          <li>
+             <a href="index.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">home </span>
+                <span class="ml-3">হোম</span>
+             </a>
+          </li>
+          <li>
+             <button type="button" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">search</span>
+                   <span class="flex-1 ml-3 text-left whitespace-nowrap">আমি খুঁজছি.....</span>
+                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+             </button>
+             <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                   <li>
+                      <a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">পাত্র </a>
+                   </li>
+                   <li>
+                      <a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">পাত্রী</a>
+                   </li>
+                   <li>
+                      <a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">ডিফর্সী পাত্র/পাত্রী</a>
+                   </li>
+             </ul>
+          </li>
+          <li>
+             <a href="login.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">person</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">লগিন </span>
+             </a>
+          </li>
+          <li>
+             <a href="signup.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">person_add</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">সাইন আপ</span>
+             </a>
+          </li>
+       </ul>
+    </div>
+ </div>
+ 
+      <!--Navbar slider finished!-->
+      <!--Navbar work finished!-->
+
+<!--User not login bt create a bio data sec start-->
+<div class="container flex justify-center m-auto md:h-screen">
+    
+<div class="p-6 max-w-sm h-fit my-10 bg-white rounded border border-gray-300 shadow-md dark:bg-gray-800 dark:border-gray-700 text-center  md:absolute text-white md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-screen">
+<div class="flex justify-center">
+    <span class="material-icons text-gray-700 dark:text-gray-500" style="font-size: 45px;"> gpp_maybe</span>
+</div>
+    <a href="login.html">
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900  text-center dark:text-white">লগিন প্রয়োজন!</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">কোনো বায়োডাটা তৈরি করতে আপনাকে অবশ্যই লগিন করতে হবে। </p>
+    <a href="login.html" class="inline-flex items-center text-blue-600 hover:underline">
+        এই পেজ থেকে লগিন করুন
+        <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+    </a>
+</div>
+
+</div>
+
+<!--User not login bt create a bio data sec ended-->
+
+
+    <!-- Footer sec start -->
+    <footer class="p-4 bg-white shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="#" class="hover:underline">Nikkah</a>. সর্বস্বত্ব সংরক্ষিত
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">আমাদের সম্পর্কে</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">গোপনীয়তা নীতি</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">লাইসেন্স</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">যোগাযোগ</a>
+            </li>
+        </ul>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
+
+

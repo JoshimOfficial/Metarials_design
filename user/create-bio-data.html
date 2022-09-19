@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nikkah || Find Your Life Partner</title>
+    <link rel="shortcut icon" href="./imgs/logo/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../tailwind.css">
+    <link rel="stylesheet" href="libray/tailwind_css_lib/tailwind.min.css">
+    <script src="./libray/tailwind_js_lib/tailwind.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body class="dark:bg-gray-900">
+
+
+    <!--Working with navbar-->
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="index.html" class="flex items-center">
+          <img src="./imgs/logo/logo.svg" class="mr-3 h-10  md:h-16" alt="Logo">
+          <span class="self-center text-xl font-semibold text-gray-700  whitespace-nowrap dark:text-white">Nikkah</span>
+      </a>
+
+      <div class="flex md:order-2">
+
+        <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class="text-white    focus:outline-none  font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button">
+          
+        <img class="w-8 h-8 rounded-full" src="./imgs/index/01.jpg" alt="User_avatar">
+        <span class="flex-1 ml-1 whitespace-nowrap mt-1 text-gray-800 dark:text-gray-300">প্রফাইল</span>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div id="dropdownInformation" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 310px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+          <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
+            <div>Joshim Uddin</div>
+            <div class="font-medium truncate">text.exmple@gmail.com</div>
+          </div>
+          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformationButton">
+            <li>
+              <a href="profile.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ড্যাশবোর্ড</a>
+            </li>
+            <li>
+              <a href="account-settings.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">অ্যাকাউন্ট</a>
+            </li>
+          </ul>
+          <div class="py-1">
+            <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">লগ আউট</a>
+          </div>
+      </div>
+        
+           <div class="hidden md:flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white  ">/</div>
+
+          <button data-drawer-target="navbar_slider" data-drawer-show="navbar_slider" aria-controls="navbar_slider"  type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+            <span class="sr-only">Opn main menu</span>
+            <span class="material-icons">reorder</span>
+        </button>
+
+                     <!--Working with darkmode started-->
+                          <div class="flex items-center mt-[5px] w-7 h-7 cursor-pointer bg-gray-300 dark:bg-gray-700 rounded-full  ml-2 p-1 md:mt-2" id="toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="dark:fill-slate-300 w-5"><path d="M11.993,3a9.326,9.326,0,0,0-1.138,4.477,8.8,8.8,0,0,0,8.569,9.015c.2,0,.385-.017.576-.03A8.5,8.5,0,0,1,12.569,21,8.8,8.8,0,0,1,4,11.985,8.83,8.83,0,0,1,11.993,3Z"/></svg>
+                          </div>
+                    <!--Working with darkmode ended!-->
+      </div>
+      <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html" class="block py-2 pr-4  pl-3  bg-blue-700 rounded md:hover:text-blue-700 text-gray-700 md:bg-transparent md:p-0 dark:text-gray-400 dark:hover:text-white" aria-current="page">হোম</a>
+          </li>
+          <li>
+            <a href="bride_groom.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">বর/কনে</a>
+          </li>
+          <li>
+            <a href="create-bio-data.html" class="block py-2 pr-4 pl-3  text-blue-700 underline rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">বায়োডাটা তৈরি করুন</a>
+          </li>
+          <li>
+            <a href="write-a-blog.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ব্লগ লিখুন</a>
+          </li>
+          <li>
+            <a href="success-story.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">সফলতার গল্প</a>
+          </li>
+          <li>
+            <a href="about-us.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">আমাদের সম্পর্কে</a>
+          </li>
+        </ul>
+        
+      </div>
+      </div>
+    </nav>
+
+    
+<!-- navbar slider started -->
+<div id="navbar_slider" class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="navbar_slider-label">
+   <h5 id="navbar_slider-label" class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+   <button type="button" data-drawer-dismiss="navbar_slider" aria-controls="navbar_slider" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+       <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+       <span class="sr-only">Close menu</span>
+   </button>
+ <div class="py-4 overflow-y-auto">
+     <ul class="space-y-2">
+        <li>
+           <a href="index.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+              <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">home </span>
+              <span class="ml-3">হোম</span>
+           </a>
+        </li>
+        
+        <li>
+          <a href="profile.htm" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+             <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">account_circle</span>
+             <span class="ml-3">প্রফাইল</span>
+          </a>
+       </li>
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+            <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">edit_note</span>
+            <span class="flex-1 ml-3 whitespace-nowrap">বায়োডাটা তৈরি করুন</span>
+         </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+            <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">logout</span>
+            <span class="flex-1 ml-3 whitespace-nowrap">লগ আউট</span>
+         </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+            <span class="material-icons w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">logout</span>
+            <span class="flex-1 ml-3 whitespace-nowrap">লগ আউট</span>
+         </a>
+        </li>
+     </ul>
+  </div>
+</div>
+
+    <!--Navbar slider finished!-->
+    <!--Navbar work finished!-->
+   
+      
+
+      <!--Registration sec started-->
+      <div class="container md:h-screen m-auto">
+         <div class="mt-2 p-3 md:w-5/6 md:m-auto">
+ 
+             <div class="flex justify-center">
+                 <h1 class="font-medium text-xl text-center text-gray-900 dark:text-gray-300">বায়োডাটা তৈরি করুন</h1>
+                 <span class="material-icons ml-2 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">edit_document</span> 
+             </div>
+             
+ <form>
+     <div class="grid gap-6 mb-6 md:grid-cols-2">
+         <div>
+             <span class="block mb-2 mt-5 text-sm font-medium text-gray-900 dark:text-gray-300">পাত্র/পাত্রীর নামঃ </span> 
+             <div class="relative ">
+                 <input type="text" id="fname" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                 <label for="fname" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/3     peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">নাম </label>
+             </div>
+         </div>
+         <div>
+             <span class="block mb-2 mt-5 text-sm font-medium text-gray-900 dark:text-gray-300">পদবীঃ </span> 
+             <div class="relative ">
+                 <input type="text" id="usernmae_mail" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                 <label for="usernmae_mail" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/3     peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">নামের পদবী  </label>
+             </div>
+         </div>
+         <div>
+             <span class="block mb-2 mt-5 text-sm font-medium text-gray-900 dark:text-gray-300">নাম্বারঃ </span> 
+             <div class="relative ">
+                 <input type="text" id="number" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                 <label for="number" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/3     peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">পাত্র/পাত্রীর নাম্বার</label>
+             </div>
+         </div>  
+         <div>
+             <span class="block mb-2 mt-5 text-sm font-medium text-gray-900 dark:text-gray-300">ইমেইলঃ </span> 
+             <div class="relative ">
+                 <input type="text" id="email" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                 <label for="email" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/3     peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">পাত্র/পাত্রীর ইমেইল</label>
+             </div>
+         </div>
+         <div>
+            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="file_input">পাত্র/পাত্রীর ছবিঃ </label>
+            <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file">
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">SVG, PNG, JPG or GIF (MAX. 3MB).</p>
+         </div>
+         <div>
+            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="file_input">পাত্র/পাত্রীর CV (ঐচ্ছিক)</label>
+            <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file">
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help"> JPG, DOCX, PDF, SVG, PNG (MAX. 5MB).</p>
+         </div>
+
+         <div>
+             <span class="block mb-2 mt-5 text-sm font-medium text-gray-900 dark:text-gray-300">পাত্র/পাত্রীর বয়সঃ </span> 
+             <div class="relative ">
+                 <input type="text" id="age" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                 <label for="age" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/3     peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">পাত্র/পাত্রীর বয়স</label>
+             </div>
+         </div>
+
+         <div>
+            
+             <div class="relative ">
+           <label for="district_selection" class="block mb-2 mt-6 text-sm font-medium text-gray-900 dark:text-gray-400">পাত্র/পাত্রী বর্তমানে-</label>
+         <select id="district_selection" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded  focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white  dark:focus:border-blue-500">
+           <option selected="">আপনার বর্তমান অবস্থা নির্বাচন করুন....</option>
+           <option value="">ছাত্র</option>
+           <option value="">ছাত্রী</option>
+           <option value="">চাকুরীজীবী</option>
+           <option value="">সরকারী চাকুরীজীবী</option>
+           <option value="">ডিফর্সড</option>
+
+           </select>
+             </div>
+         </div>
+     </div>
+     
+     <div class="mb-6">
+         <label for="district_selection" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">জেলাঃ</label>
+         <select id="district_selection" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded  focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white  dark:focus:border-blue-500">
+           <option selected="">আপনার জেলা নির্বাচন করুন....</option>
+           <option value="">সকল জেলা</option>
+           <option value="">কুমিল্লা</option>
+           <option value="">কক্সবাজার</option>
+           <option value="">কুষ্টিয়া</option>
+           <option value="">কিশোরগঞ্জ</option>
+           <option value="">কুড়িগ্রাম</option>
+           <option value="">খাগড়াছড়ি</option >
+           <option value="">খুলনা</option>
+           <option value="">গাজীপুর</option>
+           <option value="">গোপালগঞ্জ</option>
+           <option value="">গাইবান্ধা</option>
+           <option value="">হবিগঞ্জ</option>
+           <option value="">চাঁদপুর</option>
+           <option value="">চট্টগ্রাম</option>
+           <option value="">চাঁপাইনবাবগঞ্জ</option>
+           <option value="">চুয়াডাঙ্গা</option>
+           <option value="">জয়পুরহাট</option>
+           <option value="">জামালপুর</option>
+           <option value="">ঝিনাইদহ</option>
+           <option value="">ঝালকাঠি</option>
+           <option value="">যশোর</option>
+           <option value="">শরীয়তপুর</option>
+           <option value="">শেরপুর</option>
+           <option value="">টাঙ্গাইল</option>
+           <option value="">ঠাকুরগাঁও</option>
+           <option value="">ঢাকা</option>
+           <option value="">রাঙ্গামাটি</option>
+           <option value="">রাজশাহী</option>
+           <option value="">রাজবাড়ী</option>
+           <option value="">রংপুর</option>
+           <option value="">দিনাজপুর</option>
+           <option value="">নোয়াখালী</option>
+           <option value="">নাটোর</option>
+           <option value="">নওগাঁ</option>
+           <option value="">নড়াইল</option>
+           <option value="">নরসিংদী</option>
+           <option value="">নারায়ণগঞ্জ</option">
+           <option value="">নীলফামারী</option>
+           <option value="">নেত্রকোণা</option>
+           <option value="">লক্ষ্মীপুর</option>
+           <option value="">লালমনিরহাট</option>
+           <option value="">সিরাজগঞ্জ</option>
+           <option value="">সাতক্ষীরা</option>
+           <option value="">সিলেট</option>
+           <option value="">সুনামগঞ্জ</option>
+           <option value="">পাবনা</option>
+           <option value="">পটুয়াখালী</option>
+           <option value="">পিরোজপুর</option>
+           <option value="">পঞ্চগড়</option>
+           <option value="">ফেনী</option>
+           <option value="">ফরিদপুর</option>
+           <option value="">ব্রাহ্মণবাড়িয়া</option>
+           <option value="">বান্দরবান</option>
+           <option value="">বগুড়া</option>
+           <option value="">বাগেরহাট</option>
+           <option value="">বরিশাল</option>
+           <option value="">বরগুনা</option>
+           <option value="">ভোলা</option>
+           <option value="">ময়মনসিংহ</option>
+           <option value="">মেহেরপুর</option>
+           <option value="">মাগুরা</option>
+           <option value="">মৌলভীবাজার</option>
+           <option value="">মানিকগঞ্জ</option>
+           <option value="">মুন্সিগঞ্জ</option>
+           <option value="">মাদারীপুর</option>
+         </select>
+     </div> 
+     
+     <div class="mb-6">
+      <span class="block mb-2 mt-5 text-sm font-medium text-gray-900 dark:text-gray-300">আমি পাত্র/পাত্রীর-</span> 
+      <div class="flex">
+          <div class="flex items-center mr-4">
+              <input id="inline-3-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="inline-3-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">বাবা</label>
+          </div>
+          <div class="flex items-center mr-4">
+              <input id="inline-4-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="inline-4-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">মা</label>
+          </div>
+          <div class="flex items-center mr-4">
+            <input id="inline-6-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="inline-6-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">আমি নিজেই পাত্র</label>
+         </div>
+         <div class="flex items-center mr-4">
+            <input id="inline-7-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="inline-7-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">আমি নিজেই পাত্রী</label>
+         </div>
+         <div class="flex items-center mr-4">
+            <input id="inline-5-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="inline-5-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">অন্যান্য</label>
+        </div>
+      </div>
+
+      <div class="flex flex-col  mt-10">
+         
+         <label for="message" class="block mb-2 text-[17px] font-medium text-gray-900 dark:text-gray-300 ">পাত্র/পাত্রীর সম্পর্কে লিখুনঃ </label>
+         <div>
+            <span class="block mb-2  text-sm font-medium text-gray-900 dark:text-gray-400"> হেডিং লিখুন (১৫০ ক্যার‍্যাক্টার সর্বচ্চো) </span> 
+
+            <div class="relative">
+
+               <textarea rows="1" class="block mt-5 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="হেডিং লিখুন....যেমন- একজন ইঞ্জিনিয়ার পাত্র প্রয়োজন"></textarea>
+
+            </div>
+        </div>
+
+         <textarea id="message" rows="4" class="block mt-5 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="পাত্র/পাত্রীর সম্পর্কে লিখা এখান থেকে শুরু করুন......."></textarea>
+
+      </div>
+
+
+  </div> 
+
+     <button type="submit" class="bg-gray-700 text-white border flex border-gray-300 focus:outline-none    font-medium rounded text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">বায়োডাটা পোস্ট করুন</button>
+ </form>
+ 
+         </div>
+       </div>
+        <!--Registration sec ended-->
+
+
+
+    
+    <script src="../main.js"></script>
+</body>
+</html>
+
+
